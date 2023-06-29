@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0;}
+        #hat{
+            position: fixed;/* Z축으로 올려서 고정 */
+            left: 0;
+            top: 0;
+            background-color: aliceblue;
+            width: 100%;
+            text-align: center;
+            z-index: 9; 
+        }
+        #art{height: 500px; background-color: aquamarine; margin-top: 120px;}
+        #sec{height: 2000px;background-color: blueviolet;}
+        #t_b{position: fixed; top: 10px;right: 10px; z-index: 10; background-color:tomato;}
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <aside id="t_b">
+        TOP
+    </aside>
+    <header id="hat">
+
+        <img src="img/2.png" alt="물고기">
+        <nav>메뉴</nav>
+    </header>
+
+
+   
+
+
+    <article id ="art">
+        메인 아티클 영역
+    </article>
+
+    <section id ="sec">
+        메인 본문 영역
+    </section>
+</body>
+</html>

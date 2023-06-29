@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            border: 1px solid #777;
+            width: 500px;
+            /* 자식을 플로팅 했으면 감싸줄 부모영역에 둘중 택1하여 선언한다. */
+            /* 방법 1 나중에 드롭다운 메뉴가 나오지 않는다.*/
+            /* overflow: hidden; */
+        }
+        
+        /* 방법2 이 방법 추천!!!*/
+        .box::after{
+            content: "";display: block; clear: both;
+        }
+        
+        .box > div {
+            float: left;
+            width: 20%;/* 너비 나누기 5  */
+            border: 1px solid black; /* 보더가 들어옴으로써 너비가 추가되어 자동으로 크기가 증가하기 때문 */
+            /* 해결방법 */
+            box-sizing: border-box;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    
+    <div class="box">
+        <div>박스1</div>
+        <div>박스3</div>
+        <div>박스3</div>
+        <div>박스4</div>
+        <div>박스5</div>
+    </div>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</body>
+</html>

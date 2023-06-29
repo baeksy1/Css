@@ -1,0 +1,98 @@
+@import url(reset.css);
+.hd{display: inline-block;
+    width: 100%;
+background-color: white; }
+.social{position: absolute; top: 30px;left: 30px; 
+    }
+
+.social {overflow: hidden;}
+.social li{float: left;  width: 32px; height: 32px;
+    background: url('img/social.png') no-repeat;
+}
+
+.social li:nth-child(2){
+    background-position: -32px 0;
+}
+.social li:nth-child(3) {
+    background-position: -64px 0;
+}
+.social li:nth-child(4) {
+
+    background-position: -96px 0;
+}
+.info{position: absolute; top: 30px; right: 30px;  overflow: hidden; font-size: 15px; padding-right: 10px;}
+.info .left{
+    text-decoration: none;
+    float: left;
+    padding-right: 10px;
+}
+.info .right{
+    text-decoration: none;
+    float: right;
+}
+.benner{text-align: center;}
+.benner li{
+    display:inline-block;
+   padding: 30px 50px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.benner li a{
+    text-decoration: none;
+}
+
+.body{
+    border-top: 3px solid red;
+    margin-top: 170px;
+    height: 500px;
+    background-image: url(img/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.con{
+    color: aliceblue;
+    text-align: center;
+}
+.con h1{
+    padding-top: 150px;
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+.con p{
+    line-height: 80px;
+}
+
+.box .cont{
+    font-size: 15px;
+    border-bottom: 3px dashed #ddd;
+    padding: 10px 0;}
+
+.box{
+    
+    overflow: hidden;
+}
+    
+.in{
+    display: inline-block;
+    color: #ddd;
+    margin: 0 40px 100px 40px;
+}
+
+.footer{
+    overflow: hidden;
+    border-top: 1px solid black;
+    padding: 10px 10px;
+    height: 40px;
+    font-size: 14px;
+    
+}
+
+.footer .left{
+    float: left;
+    
+}
+.footer .right{
+    float: right;
+}

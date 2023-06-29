@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: inline-flex;
+            /* display: flex; */
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        .container .item {
+            background-color: red;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    https://heropy.blog/2018/11/24/css-flexible-box/s
+
+    <h3>flex vs inlineflex</h3>
+    <div class="container">
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr />
+
+
+    <style>
+        .container2 {
+            /* display: inline-flex; */
+
+            display: flex;
+            flex-direction: column;/* 주축(배치방향) - 서브축(배치방향의 반대) */
+            background-color: red;
+            padding: 20px;
+        }
+
+        .container2 .item {
+            background-color: yellow;
+            margin: 20px;
+
+            width: 50px;
+            height: 50px;
+
+        }
+    </style>
+
+
+    <h3>flexd-direction 주축에 대한 설정</h3>
+
+    <div class="container2">
+        <div class="item">flex1</div>
+        <div class="item">flex2</div>
+        <div class="item">flex3</div>
+    </div>
+
+
+    <hr>    
+    <style>
+        .container3 {
+            /* display: inline-flex; */
+            
+            display: flex;
+           /* item의 줄바꿈 설정 */
+            /* flex-wrap: wrap; 기본값nowrap */
+
+
+            /* flex-flow: row wrap;↑↑↑↑위와 똑같은 선언 */
+            /* flex-flow: column nowrap; */
+
+
+
+
+            background-color: red;
+            padding: 20px;
+            width: 800px;
+        }
+        
+        .container3 .item {
+            background-color: yellow;
+            margin: 20px;
+            
+            width: 50px;
+            height: 50px;
+            
+        }
+        </style>
+
+<h3>flex-wrap(컨테이너에 공간이 없을 때 줄바꿈 설정)</h3>
+
+
+    <div class="container3">
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+        <div class="item">윤정님 너무 시끄러워요</div>
+    </div>
+
+
+</body>
+
+</html>

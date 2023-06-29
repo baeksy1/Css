@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*  *{color:red;}*/
+        b{color:red;}
+        ul, li{list-style: none;}
+    
+        #a1{color: blueviolet;}
+        .a1{color: blue;}
+    
+    </style>
+
+
+</head>
+<body>
+    
+    <b>태그</b>
+<b>태그</b>
+<b>태그</b>
+<b>태그</b>
+<p>태그</p>
+<ul>
+    <li>태그</li>
+
+</ul>
+
+<p id="a1">id는 화면에서 고유합니다!!!!!!!!!!!!!</p>
+
+<p class="a1">클래스는 여러개 생성가능</p>
+<p class="a1">클래스는 여러개 생성가능</p>
+<p class="a1">클래스는 여러개 생성가능</p>
+<p class="a1">클래스는 여러개 생성가능</p>
+
+<!-- 모든 자식에 있는 p 태그를 의미 -->
+<style>
+.box p{color: rgb(159, 189, 234);}
+
+.box > p{color: red;}
+</style>
+
+<div class="box">
+
+    <p>직계자식</p>
+    <p>직계자식</p>
+    <div>
+        <p>자식</p>
+        <p>자식</p>
+    </div>
+</div>
+
+
+<style>
+    input[type='text']{color: blue;}
+</style>
+<input type="text">
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+
+
+
+
+header .box{border-top: 1px  solid silver;border-bottom: 1px  solid silver;}
+.top{
+    width: 1008px;
+    margin: 0 auto;
+    
+}
+.top-mid{
+    width: 1008px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top div{overflow: hidden;}
+.top div p{
+    float: left;
+    color: #666;
+    font-size: 14px;
+    padding: 11px 7px;
+}
+.top ul{
+    float: right;
+}
+.top ul li{
+    display: inline;
+    border-left: 1px solid silver;
+}
+.top ul li a{
+    color: #666;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    padding: 11px 7px;
+}
+header .top-mid .melon{
+    float: left;
+}
+header .top-mid .search{
+    float: left;
+    width: 322px;
+    height: 40px;
+    margin: 36px 0 0 11px;
+    background-image: url(img/melon_search.png);
+    overflow: hidden;
+    display: inline;
+}
+header .top-mid .right-logo{
+    float: right;
+    margin: 10px 0 0;
+}
+
+header .search .text{
+    
+    float: left;
+    width: 250px;
+    height: 25px;
+    border: none;
+    margin: 7px 0 0 18px;
+}
+header .search .btn{
+    float: right;
+    width: 45px;
+    height: 40px;
+    border: none;
+    background-color: white;
+   background-image: url(img/melon_btn.png);
+    cursor: pointer;
+}
+
+.top-bottom{
+    width: 1008px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.top-bottom ul li{
+    float: left;
+    overflow: hidden;
+}
+.top-bottom ul li a{
+    float: left;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    width: 75px;
+    height: 40px;
+}
+.top-bottom .mypage{
+    float: right;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section .wrap{width: 1008px;margin: 0 auto;}
+section .wrap h6{
+    margin-top: 30px;
+    font-size: 0.67em;
+}
+section .content .list-wrap{width: 480px;float: left;}
+section .content .slide-wrap{width: 236px; float: left;}
+section .content .user-wrap{width: 280px;float: left;}
+section .content{height: 320px;}
+.list-wrap ul {overflow: hidden;}
+.list-wrap ul li {float: left; width: 33.3333%; position: relative;}
+
+/* 이미지의 가수명 영역 */
+.list-wrap ul li a{position: relative;}
+.list-wrap ul li a .singer {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 11px;
+    height: 22px;
+    line-height: 22px;
+    opacity: 0.8;
+}
+
+.list-wrap ul li .hover-cont{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 156px;
+    height: 156px;
+    background-color: black;
+    opacity: 0.0;
+    z-index: 10;
+    transition: opacity .2s ease-in-out;
+}
+
+/* 호버 */
+.list-wrap ul li:hover > .hover-cont{
+    opacity: 1;
+}
+.list-wrap ul li .hover-cont a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+/*  */
+.slide-wrap {margin-left: 4px;}
+.user-wrap {margin-left: 8px; width: 280px;}
+.user-wrap > .ceil{
+    border:1px solid #ddd;
+    height: 115px;
+    text-align: center;
+    padding: 0 17px;
+
+}
+
+
+.user-wrap > .bottom{
+    margin-top: 12px;
+   
+}
+
+.wrap .benner{
+    text-align: center;
+    margin-top: 20px;
+}
+.login{
+    text-align: center;
+    padding: 24px 0 0px 0;
+    overflow: hidden;
+}
+.login .left{
+    float: left;
+    font-size: 11px;
+    color: #939393;
+}
+.login .right{
+    float: right;
+    font-size: 11px;
+    color: #939393;
+}
+.ceil .btn{
+    width: 100%;
+    height: 42px;
+    background-color: #00d344;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    margin: 10px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

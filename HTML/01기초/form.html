@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <form action="https://www.google.com">
+    <!-- 폼태그는 서버에 사용자의 입력데이터를 전달할 때 쓴다.<form>여기 안에서.<form/> -->
+        <!-- 모든 input 태그에는 name(변수명)이 필수입니다!! -->
+        <h3>입력양식</h3>
+        아이디:<input type="text"  size="5" placeholder="아이디"> <br/>
+        비밀번호:<input type="password" placeholder="비밀번호"><br/>
+        수량: <input type="number" placeholder="수량" max="3"><br/>
+        날짜 : <input type="date"><br/>
+
+        시군구 선택 <!-- name 속성으로 그룹화 시켜줘야됨. - 그래야 나중에 리스트로 받을 수 있음 name 은 변수명이 된다. -->
+        <input type="checkbox" name ="gu">강남구
+        <input type="checkbox" name ="gu">관악구
+        <input type="checkbox" name ="gu">금천구
+        <input type="checkbox" name ="gu">구로구
+        <br/>
+        전공 <!-- name속성을 주지 않으면 하나만 선택이 아닌 다중선택이 된다. - 각 하나의 값을 갖고있기 때문. -->
+        <input type="radio"name ="major">경영
+        <input type="radio"name ="major">컴퓨터
+        <input type="radio"name ="major">수학
+        <input type="radio"name ="major">통계
+        <br/> 
+        통신사 <!-- CHECKBOX와 기능은 똑같다. -->
+        
+        <select name="phone">
+            <option>SKT</option>
+            <option>KT</option>
+            <option>LGU+</option>
+            <option>알뜰SKT</option>
+            <option>알뜰KT</option>
+            <option>알뜰U+</option>
+        </select>
+        <br/>
+        <h2>글</h2>
+        <textarea name="topic" rows="5"cols="30" ></textarea><!-- 높이와 너비 설정 -->
+        <br/>
+        <input type="file" name="">
+        <input type="reset" value="초기화할게요"> <!-- 리셋버튼의 값 바꾸는 기능 value -->
+        <br/>
+        <br/><!-- 폼태그 전부를 서버로 전송할때 사용한다. -->
+        <input type="submit" value="데이터 전송">
+
+</form>
+
+</body>
+</html>

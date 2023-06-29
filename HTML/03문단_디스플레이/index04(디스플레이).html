@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0;}/* */
+        ul, li{list-style: none;}
+
+        .gnb > li {
+            display: inline-block;
+        }
+        .gnb > li > a {
+            display: block;
+            width: 100px; /*a태그가 인라인이라 변경이 안된다.*/
+            height: 100px;
+            line-height: 100px;
+            /* text-align: center; 지워도 가운데로 감 gnb에서 명령했기 떄문*/
+            /* border: 1px solid red;  */
+            color: royalblue;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .gnb{
+            text-align: center;
+            background-color:seagreen;
+        }
+        
+        .gnb > li > a:hover{
+            background-color: blueviolet;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+
+<nav class="box"> <!--nav는 단순기능 -->
+
+    <ul class = "gnb">
+        <li class="a"> <a href="#">목록</a> </li>
+        <li> <a href="#">목록</a> </li>
+        <li> <a href="#">목록</a> </li>
+        <li> <a href="#">목록</a> </li>
+        <li> <a href="#">목록</a> </li>
+    </ul>
+
+
+</nav>
+
+
+
+</body>
+</html>

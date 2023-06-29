@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0;padding: 0;}
+
+        .list{margin: 0 auto;width: 500px; position: relative;}
+
+        p{
+            
+            border: 1px solid #777;
+            height: 100px;
+            
+        }
+
+        .a1{background-color: yellow;}
+        .a2{
+            background-color: red;
+            /* 규칙1 absolute로 올린다 */
+            position: absolute;/*절대 좌표 기준으로 올리겠다라는 명령어 absolute. (body)영역을 기준으로 z축으로 끌어올린다.*/
+            left:0;
+            top:0;
+            /* 규칙2 포지션의 위치기반이 될 부모태그에 relative 선언해준다. */
+            width: 30px;
+            height: 50px;
+            }
+        .a3{background-color: blue;}
+    </style>
+</head>
+<body>
+    
+    <div class="list">
+        <div class="content">
+            <p class="a1">포지션</p>
+            <p class="a2">포지션</p>
+            <p class="a3">포지션</p>
+        </div>
+    </div>
+
+</body>
+</html>

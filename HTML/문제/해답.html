@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        /* 처음 시작할때 패딩과 마진을 없애고 시작하는것이 좋다 */
+        *{padding: 0;margin: 0;}
+        ul,li{list-style: none;}
+        img{max-width: 100%; height: auto;}
+
+        
+        .gnb-box {
+            text-align: center;
+            background-color: black;
+        }
+
+        .gnb > li{
+            display: inline-block;
+            /* height:  64px;해결방법 1 */
+        }
+        .gnb > li > a {
+            display: block;
+            color: aliceblue;
+            text-decoration: none;
+            /* height: 50px;
+            line-height: 50px; */
+
+            padding: 20px 10px;
+            height: 60px;
+            box-sizing: border-box; /* 해결방법 2 */
+        
+        }
+        .gnb > li > a:hover{
+            border-bottom: 3px solid white; /* 윤곽이 높이에 적용이 되어서 누를때마다 크기가 달라지는거임 해결방법 1. 높이자체를 잡아두기 */
+        }
+
+
+        
+        section{margin-top: 80px;}
+        
+        .box{
+            
+            width: 1080px;
+            margin: 0 auto;
+        }
+        .box > .a1{
+            border: 1px solid black;
+            padding: 30px;
+
+        }
+    </style>
+
+
+
+</head>
+<body>
+    
+
+    <header>
+        <nav class="gnb-box">
+            <ul class="gnb">
+                <li><a href="#">목록</a></li>
+                <li><a href="#">목록</a></li>
+                <li><a href="#">목록</a></li>
+                <li><a href="#">목록</a></li>
+                <li><a href="#">목록</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <article>
+        <img src="img/과자.jpg">
+    </article>
+    
+    
+    <section >
+        <div class="box">
+        <h3>오늘의 발견</h3>
+         <div class="a1">
+            안녕
+         </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+</html>
